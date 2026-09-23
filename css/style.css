@@ -169,4 +169,25 @@ input[type="submit"]:hover {
     background-color: #8a8a8a;
 }
 
+.caption {
+    font-size: 0.85rem;
+    color: #8a8a8a;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.framed {
+    transition: transform 0.3s ease;
+    height: 300px;
+    object-fit: contain;
+    width: 100%;
+    background-color: #8a8a8a;
+    border: 5px solid #0f0e0e;
+    padding: 12px;
+}
+
+.framed:hover {
+    transform: scale(1.02);
+}
+/* shared classes for framed images */
 /*end of form styling*/
