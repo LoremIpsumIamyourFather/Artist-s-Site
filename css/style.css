@@ -1,40 +1,90 @@
 body {
-    font-family: 'Lato', sans-serif; /* sets the font for the entire body of the document to Lato, a sans-serif font */
-    background-color: #fafafa;/* sets the background color of the entire body of the document to a light gray color */
-    color: #1a1a1a;/* sets the text color of the entire body of the document to a dark gray color */
-    margin: 0; /* removes the default margin from the body element */       
-    line-height: 1.6; /* sets the line height for the entire body of the document to 1.6, which is a good default for readability */
+    /* body selector. Applies the rule to the entire body of the document */
+    font-family: 'Lato', sans-serif;
+    /* sets the font for the entire body of the document to Lato, a sans-serif font */
+    background-color: #fafafa;
+    /* sets the background color of the entire body of the document to a light gray color */
+    color: #1a1a1a;
+    /* sets the text color of the entire body of the document to a dark gray color */
+    margin: 0;
+    /* removes the default margin from the body element */
+    line-height: 1.6;
+    /* sets the line height for the entire body of the document to 1.6, which is a good default for readability */
 }
-/* ^^^ body selector. Applies the rule to the entire body of the document */
-h1, h2, h3, h4, h5, h6 {
+
+h1 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+    /*adds space below the h1 element*/
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /*adds space below the h2 element*/
+}
+
+h3 h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
 }
+
 /* ^^^ comma seperated selectors. Applies the rule to all heading elements */
 
+p {
+    margin-bottom: 1rem;
+    /*adds space below the paragraph element*/
+}
+
 nav {
-    padding: 2rem 0; /* adds space around the navigation bar. Keeps the menu items from touching the edges */
-    text-align:center/*aligns the menu items horizontally and in the center*/
-}   
+    padding: 2rem 0;
+    /* adds space around the navigation bar. Keeps the menu items from touching the edges */
+    text-align: center;
+    /*aligns the menu items horizontally and in the center*/
+}
+
+.container {
+    max-width: 1100px;
+    /* set the maximum width of the container */
+    padding: 3rem 1.5rem;
+    /* adds horizontal padding inside the container */
+}
 
 
-nav ul { /* selects the unordered list within the nav element and applies the following styles to it */
-    list-style: none; /*removes the bullet points from the list items No bullet points  */
-    padding: 0;/*removes the default padding from the unordered list. No padding  */
-    margin: 0;/*removes the default margin from the unordered list. No margin  */
-    display: flex;/*displays the list items in a horizontal row instead of a vertical column. Flexbox is a layout model that allows for flexible and responsive designs.  */
-    justify-content: center;/*centers the list items horizontally within the navigation bar. The list items will be evenly spaced and centered within the nav element.  */
-    gap: 2rem;/* puts 2 rem of spave between each menu item so they don't touch*/
+nav ul {
+    /* selects the unordered list within the nav element and applies the following styles to it */
+    list-style: none;
+    /*removes the bullet points from the list items No bullet points  */
+    padding: 0;
+    /*removes the default padding from the unordered list. No padding  */
+    margin: 0;
+    /*removes the default margin from the unordered list. No margin  */
+    display: flex;
+    /*displays the list items in a horizontal row instead of a vertical column. Flexbox is a layout model that allows for flexible and responsive designs.  */
+    justify-content: center;
+    /*centers the list items horizontally within the navigation bar. The list items will be evenly spaced and centered within the nav element.  */
+    gap: 2rem;
+    /* puts 2 rem of space between each menu item so they don't touch*/
 }
 
 nav a {
-    text-decoration: none;/*remove underline from links*/
-    color: #1a1a1a;/*assigns the text color*/
-    font-weight: 700;/*assigns the font weight */
-    letter-spacing: 0.05em;/*adds a little space between each letter*/
-    text-transform: uppercase;/*makes the text all uppercase*/
-    font-size: 0.9rem;/**makes the text a little smaller than the default size*/
+    text-decoration: none;
+    /*remove underline from links*/
+    color: #1a1a1a;
+    /*assigns the text color*/
+    font-weight: 700;
+    /*assigns the font weight */
+    letter-spacing: 0.05em;
+    /*adds a little space between each letter*/
+    text-transform: uppercase;
+    /*makes the text all uppercase*/
+    font-size: 0.9rem;
+    /**makes the text a little smaller than the default size*/
 }
 
-nav a:hover { /*applies the rule when the user hovers over the link with their mouse. A CSS*/
-    color: #8a8a8a;/*changes the text color to a lighter gray when the user hovers over the link. This provides visual feedback to the user that the link is interactive.  */   
+nav a:hover {
+    /*applies the rule when the user hovers over the link with their mouse. A CSS*/
+    color: #8a8a8a;
+    /*changes the text color to a lighter gray when the user hovers over the link. This provides visual feedback to the user that the link is interactive.  */
 }
