@@ -97,12 +97,13 @@ nav a:hover {
     height: 300px;
     /*sets the height of the image to 300px*/
     object-fit: contain;
-    /*ensures the image covers the entire container without distortion*/
+    /*fits the whole image inside the box; empty space is filled with the gray background*/
     width: 100%;
     /*sets the width of the image to 100% of its container*/
     background-color: #8a8a8a;
-    border: 5px solid #0f0e0e; 
+    border: 5px solid #0f0e0e;
     padding: 12px;
+    /*adds a border and background color to frame the images*/
 
 }
 
