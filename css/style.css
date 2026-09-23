@@ -86,3 +86,14 @@ nav a:hover {
     color: #8a8a8a;
     /*changes the text color to a lighter gray when the user hovers over the link. This provides visual feedback to the user that the link is interactive.  */
 }
+
+.col-md-4 img {
+    transition: transform 0.3s ease;
+    /*adds a smooth transition effect when the image is transformed*/
+}
+
+.col-md-4 img:hover {
+    transform: scale(1.02);
+    /*increases the size of the image when hovered over for a zoom effect*/
+}
+
