@@ -24,7 +24,11 @@ h2 {
     /*adds space below the h2 element*/
 }
 
-h3, h4,h5,h6 {  /*comma seperated selectors. Applies the rule to all heading elements */
+h3,
+h4,
+h5,
+h6 {
+    /*comma separated selectors. Applies the rule to all heading elements */
     font-family: 'Playfair Display', serif;
 }
 
@@ -97,3 +101,61 @@ nav a:hover {
     /*increases the size of the image when hovered over for a zoom effect*/
 }
 
+/*form layout and field styling*/
+form {
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+label {
+    /*label is an element that provides a caption for a form control*/
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+
+    /*Attribute selectors*/
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    /*allows the user to resize the textarea vertically only*/
+}
+
+input[type="submit"] {
+    background-color: #1a1a1a;
+    color: #fafafa;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    /*adds a little space between each letter*/
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    /*adds a smooth transition effect when the text transform changes*/
+}
+
+input[type="submit"]:hover {
+    background-color: #8a8a8a;
+}
+
+/*end of form styling*/
