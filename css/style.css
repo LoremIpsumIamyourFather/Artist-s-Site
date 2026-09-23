@@ -24,13 +24,11 @@ h2 {
     /*adds space below the h2 element*/
 }
 
-h3 h4,
-h5,
-h6 {
+h3, h4,h5,h6 {  /*comma seperated selectors. Applies the rule to all heading elements */
     font-family: 'Playfair Display', serif;
 }
 
-/* ^^^ comma seperated selectors. Applies the rule to all heading elements */
+
 
 p {
     margin-bottom: 1rem;
